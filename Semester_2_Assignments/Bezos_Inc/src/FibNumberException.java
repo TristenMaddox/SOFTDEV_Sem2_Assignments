@@ -1,5 +1,5 @@
 public class FibNumberException extends Exception{
-    public FibNumberException(String message){
+    public fibNumberException(String message){
         super(message);
     }
 }
