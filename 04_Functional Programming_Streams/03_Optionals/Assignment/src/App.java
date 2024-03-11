@@ -3,22 +3,15 @@ import java.util.function.Function;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        //TODO:  make a function called subtract5 using lambda notation
-        //TODO: make a function called times5 using lambda notation
-        //TODO: make a function called subtract5Times5 using andThen
+        Function<Integer, Integer> sub5 = (num) ->  num = num - 5;
 
-        //TODO:  create an int called testNumber set to 1;
-        //TODO:  apply subtract5Times5 to testNumber
+        Function<Integer, Integer> times5 = (num) -> num = num * 5;
 
+        Function<Integer, Integer> sub5times5 = sub5.andThen(times5);
 
-        //Lambda notation examples
         Function<Integer, Integer> add5 = (num) -> num + 5;
         Function<Integer, Integer> div2 = (num) -> num / 2;
-        // Function<Integer, Integer> add5Divide2 = (num) -> {
-        //     num = num + 5;
-        //     num = num / 5;
-        //     return num;
-        // };
+       
 
         Function<Integer, Integer> add5Divide2UsingAndThen = add5.andThen(div2);
 
@@ -39,6 +32,10 @@ public class App {
         System.out.println(myFlatmapExample);
         System.out.println(myFlatmapExampleExampleTest);
 
+    }
+
+    private static let TestNumber(int i) {
+        return null;
     }
 
 }
